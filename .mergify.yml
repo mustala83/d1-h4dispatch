@@ -1,8 +1,7 @@
 pull_request_rules:
-  - name: d1 dispatch ci for every pull request
+  - name: Dispatch GitHub Actions
     conditions:
-      - base=main
-      - title~=^D1DISPATCH
+      - label = dispatch
     actions:
       github_actions:
         workflow:
